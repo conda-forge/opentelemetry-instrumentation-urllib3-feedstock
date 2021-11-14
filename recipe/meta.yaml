@@ -27,9 +27,9 @@ requirements:
     - wrapt <2.0.0,>=1.0.0
     # - urllib3 <2.0.0,>=1.0.0
     # - opentelemetry-test ==0.24b0
-    # - httpretty ~=1.0
-    # - urllib3 <2.0.0,>=1.0.0
-    # - opentelemetry-util-http ==0.26b1
+    - httpretty ~=1.0
+    - urllib3 <2.0.0,>=1.0.0
+    - opentelemetry-util-http ==0.26b1
     # - opentelemetry-test-utils ==0.26b1
     # - httpretty ~=1.0
 
