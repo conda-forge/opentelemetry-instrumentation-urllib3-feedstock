@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-urllib3" %}
-{% set version = "0.57b0" %}
+{% set version = "0.58b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_urllib3-{{ version }}.tar.gz
-  sha256: f49d8c3d1d81ae56304a08b14a7f564d250733ed75cd2210ccef815b5af2eea1
+  sha256: 978b8e3daa076437b1f7ed7509d8156108aee0679556fd355e532c4065dd7635
 
 build:
   noarch: python
@@ -22,9 +22,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.57b0
-    - opentelemetry-semantic-conventions ==0.57b0
-    - opentelemetry-util-http ==0.57b0
+    - opentelemetry-instrumentation ==0.58b0
+    - opentelemetry-semantic-conventions ==0.58b0
+    - opentelemetry-util-http ==0.58b0
     - wrapt <2.0.0,>=1.0.0
     # - urllib3 <2.0.0,>=1.0.0
     # - opentelemetry-test-utils ==0.37b0
@@ -58,6 +58,7 @@ requirements:
     # - opentelemetry-test-utils ==0.44b0
     # - opentelemetry-instrumentation-urllib3 
     # - httpretty ~=1.0
+    # - urllib3 <3.0.0,>=1.0.0
     # - urllib3 <3.0.0,>=1.0.0
     # - urllib3 <3.0.0,>=1.0.0
     # - urllib3 <3.0.0,>=1.0.0
